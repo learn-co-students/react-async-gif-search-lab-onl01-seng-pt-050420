@@ -1,8 +1,5 @@
 import React, { Component}from 'react'
 
-
-
-
 class GifSearch extends Component{
 
     state = {
@@ -17,9 +14,9 @@ class GifSearch extends Component{
 
     handleSearch = (event)=>{
         event.preventDefault()
+        console.log(this.state.search)
         this.props.handleSubmit(this.state.search)
     }
-
 
     render() {
         return (

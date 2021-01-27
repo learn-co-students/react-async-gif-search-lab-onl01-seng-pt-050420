@@ -13,8 +13,8 @@ class GifListContainer extends Component{
             .then(rsp => rsp.json())
             .then(data =>
               this.setState({gifs: data.data.slice(0,8).map(gif => ({ url: gif.images.original.url }))}),
-            //  console.log(this.state))
-                )
+            //  console.log(data.data)
+             )
     }
 
     componentDidMount() {
@@ -31,7 +31,6 @@ class GifListContainer extends Component{
         )
     }
   }
-  
 
 export default GifListContainer
 

@@ -14,7 +14,7 @@ class GifListContainer extends Component{
             .then(data =>
               this.setState({gifs: data.data.slice(0,8).map(gif => ({ url: gif.images.original.url }))}),
             //  console.log(this.state))
-        )
+                )
     }
 
     componentDidMount() {
@@ -34,3 +34,5 @@ class GifListContainer extends Component{
   
 
 export default GifListContainer
+
+
